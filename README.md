@@ -1,42 +1,56 @@
-# .
+# Portfolio (Vue 3 + Vite)
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple personal portfolio site built with **Vue 3 + TypeScript + Vite**.
 
-## Recommended IDE Setup
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Tech Stack
 
-## Recommended Browser Setup
+- **Vue 3** (JS framework)
+- **TypeScript** (static typing)
+- **Vite** (dev server + build tool)
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Project Structure
 
-## Type Support for `.vue` Imports in TS
+Key source files:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- `src/main.ts` – app entry point
+- `src/App.vue` – root layout
+- `src/components/` – UI components (Header, Navbar, Footer, etc.)
+- `src/data/` – static content used by components (navigation, profile info)
+- `src/types/` – TypeScript type definitions
 
-## Customize configuration
+## Run locally
 
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+Install dependencies:
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Run development server:
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+You can open the app by navigating to `http://localhost:5173/` in your browser.
+
+## Build
+
+Build for production:
 
 ```sh
 npm run build
 ```
+
+## Type checking
+
+Run type checking (uses `vue-tsc`):
+
+```sh
+npm run type-check
+```
+
+## 📌 Notes
+
+- This repo is intentionally small and framework-focused so it is easy to extend.
