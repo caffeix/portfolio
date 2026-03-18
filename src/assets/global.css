@@ -1,0 +1,20 @@
+:root {
+    --primary: #2B1810;
+    --primary-light: #4A2B1B;
+    --text-on-primary: #fffcf9;
+    --text-font: 'Arial', sans-serif;
+    --background-color: #FAF8F5;
+    --background-color-footer: #f4f2ef;
+    --focus: #569cff;
+    --text-light: #555;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    color: var(--primary);
+    font-family: var(--text-font);
+}
